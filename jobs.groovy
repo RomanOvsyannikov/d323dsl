@@ -1,4 +1,4 @@
-def giturl = 'https://https://github.com/RomanOvsyannikov/d323dsl'
+def giturl = 'https://github.com/RomanOvsyannikov/d323dsl'
 job ("MNTLAB-rovsyannikov-main-build-job") {
  parameters {
         activeChoiceParam('BRANCH_NAME') {
