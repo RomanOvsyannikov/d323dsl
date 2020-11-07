@@ -5,8 +5,7 @@ job ("MNTLAB-rovsyannikov-main-build-job") {
             description('Choose branch')
             choiceType('SINGLE_SELECT')
             groovyScript {
-              script("""("git ls-remote -h ${giturl}").execute().text.readLines().collect {
-                      it.split()[1].replaceAll(\'refs/heads/\', \'\')}.sort()""")
+              script("""("git ls-remote -h ${giturl}").execute().text.readLines().collect {it.split()[1].replaceAll(\'refs/heads/\', \'\')}.sort()""")
             }
         }
         activeChoiceParam('Next_job') {
